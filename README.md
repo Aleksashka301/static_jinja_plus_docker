@@ -18,8 +18,15 @@ docker build -t staticjinjaplus:latest .
 ```
 
 ## Запуск контейнера
+
+Запуск
 ```bash
 docker run -it staticjinjaplus:latest bash
+```
+
+Запуск с пробросом
+```bash
+docker run -it -p 8000:8000 staticjinjaplus:latest bash
 ```
 
 ## Версии
