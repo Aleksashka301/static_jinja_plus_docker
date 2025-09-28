@@ -28,6 +28,17 @@ docker run -it staticjinjaplus:latest bash
 ```bash
 docker run -it -p 8000:8000 staticjinjaplus:latest bash
 ```
+## Запукс скрипта
+
+Перейдите в папку со скриптом
+```bash
+cd StaticJinjaPlus-main
+```
+
+Запустите скрипт
+```python
+python main.py
+```
 
 ## Версии
 - `latest` последняя версия
