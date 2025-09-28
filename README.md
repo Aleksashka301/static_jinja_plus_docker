@@ -17,6 +17,11 @@ cd static_jinja_plus_docker
 docker build -t staticjinjaplus:latest .
 ```
 
+Сборка конкретной версии (тега или ветки)
+```bash
+docker build --build-arg VERSION=0.1.0 -t staticjinjaplus:0.1.0 .
+```
+
 ## Запуск контейнера
 
 Запуск
