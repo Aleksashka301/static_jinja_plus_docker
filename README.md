@@ -12,9 +12,18 @@ git clone https://github.com/Aleksashka301/static_jinja_plus_docker.git
 cd static_jinja_plus_docker
 ```
 
-Создание образа
+## Создание образа
+
+Порт позволяет собирать Docker-образ StaticJinjaPlus на разных базовых образах. По умолчанию используется `python:3.12-slim`.
+
+Базовый образ
 ```bash
 docker build -t staticjinjaplus:latest .
+```
+
+Образ для ubuntu
+```bash
+docker build --build-arg BASE_IMAGE=ubuntu:22.04 -t staticjinjaplus:ubuntu .
 ```
 
 Сборка конкретной версии (тега или ветки)
