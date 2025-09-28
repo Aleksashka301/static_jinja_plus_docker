@@ -4,4 +4,5 @@ ADD https://github.com/Aleksashka301/StaticJinjaPlus/archive/refs/heads/main.zip
 RUN apt-get update && apt-get install -y unzip \
     && unzip /app/source.zip -d /app \
     && pip install --no-cache-dir -r /app/StaticJinjaPlus*/requirements.txt
+EXPOSE 8000
 CMD ["bash"]
