@@ -1,6 +1,7 @@
 FROM python:3.12-slim
+ARG VERSION=main
 WORKDIR /app
-ADD https://github.com/Aleksashka301/StaticJinjaPlus/archive/refs/heads/main.zip /app/source.zip
+ADD https://github.com/Aleksashka301/StaticJinjaPlus/archive/refs/heads/${VERSION}.zip /app/source.zip
 RUN apt-get update && apt-get install -y unzip \
     && unzip /app/source.zip -d /app \
     && rm /app/source.zip \
